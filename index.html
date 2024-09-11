@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- displays site properly based on user's device -->
+
+   <!-- <link rel="stylesheet" href="product_details.css" /> -->
+   <link rel="stylesheet" href="style.css">
+   <script defer src="script.js"></script>
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+   <title>Self-Shopping</title>
+
+</head>
+
+<body>
+
+   <!-- Navbar mobile view -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-lg-none d-xl-block d-lg-none d-xl-block d-xl-none d-xxl-none"
+      id="mobile_view">
+      <div class="container">
+         <a class="navbar-brand" href="#">
+            <img src="img/download.png" alt="Self Store">
+         </a>
+         <button class="btn btn-primary" id="openSidebar">
+            <i class="fas fa-bars"></i>
+         </button>
+
+         <!-- <form class="d-flex ms-auto" role="search">
+         <input class="form-control me-2" type="search" placeholder="Product Search" aria-label="Search">
+         <button class="btn btn-outline-warning" type="submit">Search</button>
+      </form> -->
+
+         <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+            <div class="offcanvas-header">
+               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body text-center">
+               <!-- Logo -->
+               <img src="img/logo.png" alt="Self Shopping" class="img-fluid" style="width: 100px;">
+               <p class="mt-2">www.self-shopping.com</p>
+
+               <!-- Navigation Links -->
+               <ul class="list-unstyled">
+                  <li class="my-3">
+                     <a href="#" class="text-decoration-none d-flex align-items-center">
+                        <i class="fas fa-home me-3"></i> Home
+                     </a>
+                  </li>
+                  <li class="my-3">
+                     <a href="#" class="text-decoration-none d-flex align-items-center">
+                        <i class="fas fa-info-circle me-3"></i> Card
+                     </a>
+                  </li>
+                  <li class="my-3">
+                     <a href="#" class="text-decoration-none d-flex align-items-center">
+                        <i class="fas fa-file-alt me-3"></i> Help
+                     </a>
+                  </li>
+                  <li class="my-3">
+                     <a href="#" class="text-decoration-none d-flex align-items-center d-md-none d-lg-block">
+                        <i class="fas fa-shield-alt me-3"></i>
+                        <button class="btn btn-primary" id="openSidebare">All catagory
+                        </button>
+                     </a>
+                  </li>
+                  <li class="my-3">
+                     <a href="#" class="text-decoration-none d-flex align-items-center">
+                        <i class="fas fa-phone-alt me-3"></i> Communication
+                     </a>
+                  </li>
+                  <li class="my-3">
+                     <a href="#" class="text-decoration-none d-flex align-items-center">
+                        <i class="fas fa-sign-in-alt me-3"></i> Login / Registration
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- All Catagory / Sidebar -->
+         <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebare" aria-labelledby="sidebarLabel">
+            <div class="offcanvas-header">
+               <button type="button" class="btn-back" data-bs-dismiss="offcanvas" aria-label="back">&#8592;</button>
+            </div>
+            <div class="offcanvas-body text-center">
+               <!-- Logo -->
+
+
+               <!-- Navigation Links -->
+               <div class="">
+                  <div class="sidebar_main">
+                     <div class="sidebarCat_con">
+                        <a href="" class="sidebarCat_main">
+                           <img src="img/cats/fashion.jpg" alt="Shirt" class="sidebarCat_img">
+                           <p class="sidebarCat_cata">Fashion And desing</p>
+                           <span class="sidebarCat_icon">
+                              <i class="bi bi-caret-right"></i>
+                           </span>
+                        </a>
+                     </div>
+
+                     <div class="sidebarCat_con">
+                        <a href="" class="sidebarCat_main">
+                           <img src="img/cats/home and living.jpg" alt="Shirt" class="img-fluid sidebarCat_img ">
+                           <p class="sidebarCat_cata">Ladis Fashion</p>
+                           <span class="sidebarCat_icon">
+                              <i class="bi bi-caret-right"></i>
+                           </span>
+                        </a>
+                     </div>
+
+                     <div class="sidebarCat_con">
+                        <a href="" class="sidebarCat_main">
+                           <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+                           <p class="sidebarCat_cata">Electronics</p>
+                           <span class="sidebarCat_icon">
+                              <i class="bi bi-caret-right"></i>
+                           </span>
+                        </a>
+                     </div>
+
+
+                     <div class="sidebarCat_con">
+                        <a href="" class="sidebarCat_main">
+                           <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+                           <p class="sidebarCat_cata">Electronics</p>
+                           <span class="sidebarCat_icon">
+                              <i class="bi bi-caret-right"></i>
+                           </span>
+                        </a>
+                     </div>
+
+
+                     <div class="sidebarCat_con">
+                        <a href="" class="sidebarCat_main">
+                           <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+                           <p class="sidebarCat_cata">Electronics</p>
+                           <span class="sidebarCat_icon">
+                              <i class="bi bi-caret-right"></i>
+                           </span>
+                        </a>
+                     </div>
+
+
+                     <div class="sidebarCat_con">
+                        <a href="" class="sidebarCat_main">
+                           <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+                           <p class="sidebarCat_cata">Electronics</p>
+                           <span class="sidebarCat_icon">
+                              <i class="bi bi-caret-right"></i>
+                           </span>
+                        </a>
+                     </div>
+
+
+                     <div class="sidebarCat_con">
+                        <a href="" class="sidebarCat_main">
+                           <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+                           <p class="sidebarCat_cata">Electronics</p>
+                           <span class="sidebarCat_icon">
+                              <i class="bi bi-caret-right"></i>
+                           </span>
+                        </a>
+                     </div>
+
+
+                     <div class="sidebarCat_con">
+                        <a href="" class="sidebarCat_main">
+                           <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+                           <p class="sidebarCat_cata">Electronics</p>
+                           <span class="sidebarCat_icon">
+                              <i class="bi bi-caret-right"></i>
+                           </span>
+                        </a>
+                     </div>
+
+
+                     <div class="sidebarCat_con">
+                        <a href="" class="sidebarCat_main">
+                           <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+                           <p class="sidebarCat_cata">Electronics</p>
+                           <span class="sidebarCat_icon">
+                              <i class="bi bi-caret-right"></i>
+                           </span>
+                        </a>
+                     </div>
+
+
+                     <div class="sidebarCat_con">
+                        <a href="" class="sidebarCat_main">
+                           <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+                           <p class="sidebarCat_cata">Electronics</p>
+                           <span class="sidebarCat_icon">
+                              <i class="bi bi-caret-right"></i>
+                           </span>
+                        </a>
+                     </div>
+
+
+                     <div class="sidebarCat_con">
+                        <a href="" class="sidebarCat_main">
+                           <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+                           <p class="sidebarCat_cata">Electronics</p>
+                           <span class="sidebarCat_icon">
+                              <i class="bi bi-caret-right"></i>
+                           </span>
+                        </a>
+                     </div>
+
+                     <div class="sidebarCat_con">
+                        <a href="" class="sidebarCat_main">
+                           <img src="img/cats/mobile.jpg" alt="Shirt" class="sidebarCat_img">
+                           <p class="sidebarCat_cata">mobile</p>
+                           <span class="sidebarCat_icon">
+                              <i class="bi bi-caret-right"></i>
+                        </a>
+                     </div>
+
+                     <div class="sidebarCat_con">
+                        <a href="" class="sidebarCat_main">
+                           <img src="img/cats/computer.jpg" alt="Shirt" class="sidebarCat_img">
+                           <p class="sidebarCat_cata">Desktop</p>
+                           <span class="sidebarCat_icon">
+                              <i class="bi bi-caret-right"></i>
+                           </span>
+                        </a>
+                     </div>
+
+                     <div class="sidebarCat_con">
+                        <a href="" class="sidebarCat_main">
+                           <img src="img/cats/personal care.jpg" alt="Shirt" class="sidebarCat_img">
+                           <p class="sidebarCat_cata">personal Care</p>
+                           <span class="sidebarCat_icon">
+                              <i class="bi bi-caret-right"></i>
+                           </span>
+                        </a>
+                     </div>
+
+                     <div class="sidebarCat_con">
+                        <a href="" class="sidebarCat_main">
+                           <img src="img/cats/stanary.jpg" alt="Shirt" class="sidebarCat_img">
+                           <p class="sidebarCat_cata">Laptop</p>
+                           <span class="sidebarCat_icon">
+                              <i class="bi bi-caret-right"></i>
+                           </span>
+                        </a>
+                     </div>
+
+
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="w-100 mt-3">
+            <div class="header-search-input position-relative w-100 mw-100">
+               <input class="form-control" type="search" placeholder="Product Search" aria-label="Search">
+            </div>
+         </div>
+      </div>
+   </nav>
+
+
+
+
+   <!-- Navbar web view  -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="web_view">
+      <div class="container">
+         <a class="navbar-brand" href="#">
+            <img src="img/download.png" alt="Self Store">
+         </a>
+         <div class="collapse navbar-collapse">
+            <form class="d-flex ms-auto" role="search">
+               <input class="form-control search" type="search" placeholder="Product Search....." aria-label="Search">
+               <button class="btn btn-outline-warning search" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav ms-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Sign in </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Help</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link toggle-btn" href="#" onclick="toggleCheckout()">
+                     <i class="fa-solid fa-cart-shopping"></i> Cart
+                  </a>
+               </li>
+            </ul>
+
+            <div class="checkout-card" id="checkoutCard">
+               <div class="checkout-header">
+                  <span>চেক আউট</span>
+                  <button class="close-btn" onclick="toggleCheckout()">x</button>
+               </div>
+               <div class="checkout-body">
+                  <p>মোট মূল্য: <span>0 TK</span></p>
+                  <p>মোট প্রডাক্ট: <span>0 প্রডাক্ট</span></p>
+               </div>
+               <div class="checkout-footer">
+                  <button class="proceed-btn">প্রবর্ধী ধাপে যান</button>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+   </nav>
+
+
+
+   <!-- Sidebar -->
+   <div class="sidebar">
+      <div class="sidebar_main">
+         <div class="sidebarCat_con">
+            <a href="" class="sidebarCat_main">
+               <img src="img/cats/fashion.jpg" alt="Shirt" class="sidebarCat_img">
+               <p class="sidebarCat_cata">Fashion And desing</p>
+               <span class="sidebarCat_icon">
+                  <i class="bi bi-caret-right"></i>
+               </span>
+            </a>
+         </div>
+
+         <div class="sidebarCat_con">
+            <a href="" class="sidebarCat_main">
+               <img src="img/cats/home and living.jpg" alt="Shirt" class="sidebarCat_img">
+               <p class="sidebarCat_cata">Ladis Fashion</p>
+               <span class="sidebarCat_icon">
+                  <i class="bi bi-caret-right"></i>
+               </span>
+            </a>
+         </div>
+
+         <div class="sidebarCat_con">
+            <a href="" class="sidebarCat_main">
+               <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+               <p class="sidebarCat_cata">Electronics</p>
+               <span class="sidebarCat_icon">
+                  <i class="bi bi-caret-right"></i>
+               </span>
+            </a>
+         </div>
+
+
+         <div class="sidebarCat_con">
+            <a href="" class="sidebarCat_main">
+               <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+               <p class="sidebarCat_cata">Electronics</p>
+               <span class="sidebarCat_icon">
+                  <i class="bi bi-caret-right"></i>
+               </span>
+            </a>
+         </div>
+
+
+         <div class="sidebarCat_con">
+            <a href="" class="sidebarCat_main">
+               <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+               <p class="sidebarCat_cata">Electronics</p>
+               <span class="sidebarCat_icon">
+                  <i class="bi bi-caret-right"></i>
+               </span>
+            </a>
+         </div>
+
+
+         <div class="sidebarCat_con">
+            <a href="" class="sidebarCat_main">
+               <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+               <p class="sidebarCat_cata">Electronics</p>
+               <span class="sidebarCat_icon">
+                  <i class="bi bi-caret-right"></i>
+               </span>
+            </a>
+         </div>
+
+
+         <div class="sidebarCat_con">
+            <a href="" class="sidebarCat_main">
+               <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+               <p class="sidebarCat_cata">Electronics</p>
+               <span class="sidebarCat_icon">
+                  <i class="bi bi-caret-right"></i>
+               </span>
+            </a>
+         </div>
+
+
+         <div class="sidebarCat_con">
+            <a href="" class="sidebarCat_main">
+               <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+               <p class="sidebarCat_cata">Electronics</p>
+               <span class="sidebarCat_icon">
+                  <i class="bi bi-caret-right"></i>
+               </span>
+            </a>
+         </div>
+
+
+         <div class="sidebarCat_con">
+            <a href="" class="sidebarCat_main">
+               <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+               <p class="sidebarCat_cata">Electronics</p>
+               <span class="sidebarCat_icon">
+                  <i class="bi bi-caret-right"></i>
+               </span>
+            </a>
+         </div>
+
+
+         <div class="sidebarCat_con">
+            <a href="" class="sidebarCat_main">
+               <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+               <p class="sidebarCat_cata">Electronics</p>
+               <span class="sidebarCat_icon">
+                  <i class="bi bi-caret-right"></i>
+               </span>
+            </a>
+         </div>
+
+
+         <div class="sidebarCat_con">
+            <a href="" class="sidebarCat_main">
+               <img src="img/cats/Electronics.png" alt="Shirt" class="sidebarCat_img">
+               <p class="sidebarCat_cata">Electronics</p>
+               <span class="sidebarCat_icon">
+                  <i class="bi bi-caret-right"></i>
+               </span>
+            </a>
+         </div>
+
+         <div class="sidebarCat_con">
+            <a href="" class="sidebarCat_main">
+               <img src="img/cats/mobile.jpg" alt="Shirt" class="sidebarCat_img">
+               <p class="sidebarCat_cata">mobile</p>
+               <span class="sidebarCat_icon">
+                  <i class="bi bi-caret-right"></i>
+            </a>
+         </div>
+
+         <div class="sidebarCat_con">
+            <a href="" class="sidebarCat_main">
+               <img src="img/cats/computer.jpg" alt="Shirt" class="sidebarCat_img">
+               <p class="sidebarCat_cata">Desktop</p>
+               <span class="sidebarCat_icon">
+                  <i class="bi bi-caret-right"></i>
+               </span>
+            </a>
+         </div>
+
+         <div class="sidebarCat_con">
+            <a href="" class="sidebarCat_main">
+               <img src="img/cats/personal care.jpg" alt="Shirt" class="sidebarCat_img">
+               <p class="sidebarCat_cata">personal Care</p>
+               <span class="sidebarCat_icon">
+                  <i class="bi bi-caret-right"></i>
+               </span>
+            </a>
+         </div>
+
+         <div class="sidebarCat_con">
+            <a href="" class="sidebarCat_main">
+               <img src="img/cats/stanary.jpg" alt="Shirt" class="sidebarCat_img">
+               <p class="sidebarCat_cata">Laptop</p>
+               <span class="sidebarCat_icon">
+                  <i class="bi bi-caret-right"></i>
+               </span>
+            </a>
+         </div>
+
+
+      </div>
+   </div>
+
+
+
+   <!-- Main Content -->
+   <div class="main-content">
+
+      <!-- banner section  -->
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="card mb-3">
+                  <img src="img/main.png" alt="photo">
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- top catagory -->
+      <section class="osahan-main-body">
+         <div class="container">
+            <div class="popular-product-inner p-3 bg-white rounded">
+               <div class="title d-flex justify-content-between align-items-center py-3 ">
+                  <h5 class="m-0 home-title">Top Catagory</h5>
+                  </a>
+               </div>
+               <div class="row static-catblock-wrraper">
+
+                  <div class="col-6 col-md-3 static-catblock">
+                     <a href="" class="static-catlink">
+                        <img src="img/Summer24.webp" alt="" class="img-fluid mb-3">
+                        <p class="static-catname"></p>
+                     </a>
+                  </div>
+                  <div class="col-6 col-md-3 static-catblock">
+                     <a href="" class="static-catlink">
+                        <img src="img/nov23-popular-en.webp" alt="" class="img-fluid mb-3">
+                        <p class="static-catname"></p>
+                     </a>
+                  </div>
+                  <div class="col-6 col-md-3 static-catblock">
+                     <a href="" class="static-catlink">
+                        <img src="img/nov23-flash-en.webp" alt="" class="img-fluid mb-3">
+                        <p class="static-catname"></p>
+                     </a>
+                  </div>
+                  <div class="col-6 col-md-3 static-catblock">
+                     <a href="" class="static-catlink">
+                        <img src="img/nov23-super-saver-en.webp" alt="" class="img-fluid mb-3">
+                        <p class="static-catname"></p>
+                     </a>
+                  </div>
+                  <div class="col-6 col-md-3 static-catblock">
+                     <a href="" class="static-catlink position-relative">
+                        <img src="img/fashion and design.jpg" alt="" class="img-fluid rounded mb-3">
+                        <p class="static-catname">Fashion & Desing</p>
+                     </a>
+                  </div>
+                  <div class="col-6 col-md-3 static-catblock">
+                     <a href="" class="static-catlink position-relative">
+                        <img src="img/baby-care.webp" alt="" class="img-fluid rounded mb-3">
+                        <p class="static-catname">Cosmetics</p>
+                     </a>
+                  </div>
+                  <div class="col-6 col-md-3 static-catblock">
+                     <a href="" class="static-catlink position-relative">
+                        <img src="img/baby-care.webp" alt="" class="img-fluid mb-3">
+                        <p class="static-catname"> Baby Care </p>
+                     </a>
+                  </div>
+                  <div class="col-6 col-md-3 static-catblock">
+                     <a href="" class="static-catlink position-relative">
+                        <img src="img/large-kitchen-appliances.webp" alt="" class="img-fluid mb-3">
+                        <p class="static-catname">Electronics </p>
+                     </a>
+                  </div>
+                  <div class="col-6 col-md-3 static-catblock">
+                     <a href="" class="static-catlink position-relative">
+                        <img src="img/mobiles-tablets.webp" alt="" class="img-fluid mb-3">
+                        <p class="static-catname">Mobile & Tablet </p>
+                     </a>
+                  </div>
+                  <div class="col-6 col-md-3 static-catblock">
+                     <a href="" class="static-catlink position-relative">
+                        <img src="img/laptops-desktops.webp" alt="" class="img-fluid mb-3">
+                        <p class="static-catname">Laptop & Desktop </p>
+                     </a>
+                  </div>
+                  <div class="col-6 col-md-3 static-catblock">
+                     <a href="" class="static-catlink position-relative">
+                        <img src="img/mobiles-tablets.webp" alt="" class="img-fluid mb-3">
+                        <p class="static-catname">Mobile & Tablet </p>
+                     </a>
+                  </div>
+                  <div class="col-6 col-md-3 static-catblock">
+                     <a href="" class="static-catlink position-relative">
+                        <img src="img/heating-cooling-air-quality.webp" alt="" class="img-fluid mb-3">
+                        <p class="static-catname">Office </p>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <!-- Special product -->
+      <div class="container-fluid   bg-lightgray pt-3">
+         <div class="container bg-white  shadow-sm  rounded pt-2 pb-2 ">
+
+            <h4 class="overflow-hidden d-flex justify-content-between mb-0 align-items-center"
+               style="margin-left: -12px;">
+               <div class="bg-warning float-start p-2 rounded-pill home-title ps-5 pe-3" style="margin-left: -30px;">
+                  Top Product
+               </div>
+               <a href="#" class="float-end text-decoration-none fs-6 selfcolor"> All Product <i
+                     class="bi bi-caret-right-fill"></i>
+               </a>
+            </h4>
+
+            <div class="container ps-0 pin_slider hidescroll bg-white    rounded pt-2 pb-2  ps-0">
+               <div class=" d-flex ps-0 ">
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="product_details.html" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <!-- new product -->
+      <div class="container-fluid   bg-lightgray pt-3">
+         <div class="container bg-white overflow-hidden  shadow-sm  rounded pt-2 pb-2 ">
+            <h4 class="overflow-hidden d-flex justify-content-between mb-0 align-items-center"
+               style="margin-left: -12px;">
+               <div class="bg-warning home-title float-start p-2 rounded-pill ps-5 pe-3" style="margin-left: -30px;">
+                  New Product
+               </div>
+               <a href="#" class="float-end text-decoration-none fs-6 selfcolor"> All Product <i
+                     class="bi bi-caret-right-fill"></i> </a>
+            </h4>
+
+            <div class="container ps-0 pin_slider hidescroll bg-white    rounded pt-2 pb-2  ps-0">
+               <div class=" d-flex ps-0 ">
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="text-dark  hvr-float   align-items-center single_post">
+                     <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                        <div class="overflow-hidden w-100" style="height: 150px;">
+                           <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                        </div>
+                        <div class="p-2">
+                           <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a very fine work
+                              sapce</p>
+                           <h6 class="fw-bold mb-0">$ 620</h6>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <!-- flash product -->
+      <div class="container-fluid   bg-lightgray pt-3">
+         <div class="card container p-0">
+            <div class="card-header selfbgcolor text-white p-3">
+               <div class="row">
+                  <div class="col-3">
+                     <p class="mb-0 home-title text-white fw-bold">Flash sale</p>
+                  </div>
+                  <div class="container col-5 ps-0 text-center ms-0 text-nowrap">
+                     <div>
+                        <ul class="d-inline ">
+                           <li class="d-inline">Day</li>
+                           <li class="d-inline">Hour</li>
+                           <li class="d-inline">Min</li>
+                           <li class="d-inline">Sec</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-3 text-end">
+                     <a href="#" class="text-decoration-none fs-6 text-white">
+                        All Product
+                        <i class="bi bi-caret-right-fill"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="card-body overflow-auto" style="background-color: rgb(242, 135, 84);">
+               <div class="d-inline-flex">
+                  <a href="" class="text-dark flash_item hvr-float rounded border-0 bg-white m-2 shadow-sm p-0">
+                     <div class="w-100 overflow-hidden rounded-top mb-2  ms-0" style="height: 150px;">
+                        <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                     </div>
+                     <div class="p-2">
+                        <p class="m-0 onlinetext">Rolex</p>
+                        <div class="d-flex flex-row justify-content-between">
+                           <p class="font-small text-danger"><del>$ 1240</del></p>
+                           <h6 class="fw-bold mb-0">$ 808</h6>
+                        </div>
+                        <div class="progress" style="height: 10px;" role="progressbar" aria-label="Warning example"
+                           aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-warning" style="  width: 70%"></div>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="" class="text-dark flash_item hvr-float rounded border-0 bg-white m-2 shadow-sm p-0">
+                     <div class="w-100 overflow-hidden rounded-top mb-2  ms-0" style="height: 150px;">
+                        <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                     </div>
+                     <div class="p-2">
+                        <p class="m-0 onlinetext">Rolex</p>
+                        <div class="d-flex flex-row justify-content-between">
+                           <p class="font-small text-danger"><del>$ 1240</del></p>
+                           <h6 class="fw-bold mb-0">$ 808</h6>
+                        </div>
+                        <div class="progress" style="height: 10px;" role="progressbar" aria-label="Warning example"
+                           aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-warning" style="  width: 70%"></div>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="" class="text-dark flash_item hvr-float rounded border-0 bg-white m-2 shadow-sm p-0">
+                     <div class="w-100 overflow-hidden rounded-top mb-2  ms-0" style="height: 150px;">
+                        <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                     </div>
+                     <div class="p-2">
+                        <p class="m-0 onlinetext">Rolex</p>
+                        <div class="d-flex flex-row justify-content-between">
+                           <p class="font-small text-danger"><del>$ 1240</del></p>
+                           <h6 class="fw-bold mb-0">$ 808</h6>
+                        </div>
+                        <div class="progress" style="height: 10px;" role="progressbar" aria-label="Warning example"
+                           aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-warning" style="  width: 70%"></div>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="" class="text-dark flash_item hvr-float rounded border-0 bg-white m-2 shadow-sm p-0">
+                     <div class="w-100 overflow-hidden rounded-top mb-2  ms-0" style="height: 150px;">
+                        <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                     </div>
+                     <div class="p-2">
+                        <p class="m-0 onlinetext">Rolex</p>
+                        <div class="d-flex flex-row justify-content-between">
+                           <p class="font-small text-danger"><del>$ 1240</del></p>
+                           <h6 class="fw-bold mb-0">$ 808</h6>
+                        </div>
+                        <div class="progress" style="height: 10px;" role="progressbar" aria-label="Warning example"
+                           aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-warning" style="  width: 70%"></div>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="" class="text-dark flash_item hvr-float rounded border-0 bg-white m-2 shadow-sm p-0">
+                     <div class="w-100 overflow-hidden rounded-top mb-2  ms-0" style="height: 150px;">
+                        <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                     </div>
+                     <div class="p-2">
+                        <p class="m-0 onlinetext">Rolex</p>
+                        <div class="d-flex flex-row justify-content-between">
+                           <p class="font-small text-danger"><del>$ 1240</del></p>
+                           <h6 class="fw-bold mb-0">$ 808</h6>
+                        </div>
+                        <div class="progress" style="height: 10px;" role="progressbar" aria-label="Warning example"
+                           aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-warning" style="  width: 70%"></div>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="" class="text-dark flash_item hvr-float rounded border-0 bg-white m-2 shadow-sm p-0">
+                     <div class="w-100 overflow-hidden rounded-top mb-2  ms-0" style="height: 150px;">
+                        <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                     </div>
+                     <div class="p-2">
+                        <p class="m-0 onlinetext">Rolex</p>
+                        <div class="d-flex flex-row justify-content-between">
+                           <p class="font-small text-danger"><del>$ 1240</del></p>
+                           <h6 class="fw-bold mb-0">$ 808</h6>
+                        </div>
+                        <div class="progress" style="height: 10px;" role="progressbar" aria-label="Warning example"
+                           aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-warning" style="  width: 70%"></div>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="" class="text-dark flash_item hvr-float rounded border-0 bg-white m-2 shadow-sm p-0">
+                     <div class="w-100 overflow-hidden rounded-top mb-2  ms-0" style="height: 150px;">
+                        <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                     </div>
+                     <div class="p-2">
+                        <p class="m-0 onlinetext">Rolex</p>
+                        <div class="d-flex flex-row justify-content-between">
+                           <p class="font-small text-danger"><del>$ 1240</del></p>
+                           <h6 class="fw-bold mb-0">$ 808</h6>
+                        </div>
+                        <div class="progress" style="height: 10px;" role="progressbar" aria-label="Warning example"
+                           aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-warning" style=" width: 70%"></div>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="" class="text-dark flash_item hvr-float rounded border-0 bg-white m-2 shadow-sm p-0">
+                     <div class="w-100 overflow-hidden rounded-top mb-2  ms-0" style="height: 150px;">
+                        <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                     </div>
+                     <div class="p-2">
+                        <p class="m-0 onlinetext">Rolex</p>
+                        <div class="d-flex flex-row justify-content-between">
+                           <p class="font-small text-danger"><del>$ 1240</del></p>
+                           <h6 class="fw-bold mb-0">$ 808</h6>
+                        </div>
+                        <div class="progress" style="height: 10px;" role="progressbar" aria-label="Warning example"
+                           aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-warning" style="  width: 70%"></div>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="" class="text-dark flash_item hvr-float rounded border-0 bg-white m-2 shadow-sm p-0">
+                     <div class="w-100 overflow-hidden rounded-top mb-2  ms-0" style="height: 150px;">
+                        <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                     </div>
+                     <div class="p-2">
+                        <p class="m-0 onlinetext">Rolex</p>
+                        <div class="d-flex flex-row justify-content-between">
+                           <p class="font-small text-danger"><del>$ 1240</del></p>
+                           <h6 class="fw-bold mb-0">$ 808</h6>
+                        </div>
+                        <div class="progress" style="height: 10px;" role="progressbar" aria-label="Warning example"
+                           aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-warning" style="  width: 70%"></div>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="" class="text-dark flash_item hvr-float rounded border-0 bg-white m-2 shadow-sm p-0">
+                     <div class="w-100 overflow-hidden rounded-top mb-2  ms-0" style="height: 150px;">
+                        <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                     </div>
+                     <div class="p-2">
+                        <p class="m-0 onlinetext">Rolex</p>
+                        <div class="d-flex flex-row justify-content-between">
+                           <p class="font-small text-danger"><del>$ 1240</del></p>
+                           <h6 class="fw-bold mb-0">$ 808</h6>
+                        </div>
+                        <div class="progress" style="height: 10px;" role="progressbar" aria-label="Warning example"
+                           aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-warning" style="  width: 70%"></div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- <div class="container-fluid   bg-lightgray pt-3 pb-3">
+         <div class="container">
+            <div class="row">
+               <a href="#" class="col-lg-4 text-dark text-decoration-none col-md-4 col-sm-12 col-12 p-2 ps-0 discount_boxex">
+                  <div class="card card-1 rounded p-4 text-center" style="background-color: rgb(65, 114, 255);">
+                     <h2 class="card-header">Discount</h2>
+                     <p class="card-text">For <span class="text-white">20%</span>  Discount click here</p>
+                  </div>
+               </a>
+
+               <a href="#" class="col-lg-4 text-dark col-md-4 col-sm-12 col-12 p-2 ps-0 discount_boxex">
+                  <button>For 20% Discount <br> click here </button>
+                  
+               </a>
+
+               <a href="#" class="col-lg-4 text-dark col-md-4 col-sm-12 col-12 p-2 ps-0 discount_boxex">
+                  <button class="rounded">
+                     <h2>Discount</h2>
+                     <p>For <span class="text-dark">20%</span> Discount click here</p>
+                  </button>
+               </a>
+            </div>
+         </div>
+      </div> -->
+
+      <!-- fashion and desing -->
+      <section class="popular-product-area pt-3">
+         <div class="container">
+            <div class="popular-product-inner p-3 bg-white rounded">
+               <div class="title d-flex justify-content-between align-items-center py-3 ">
+                  <h5 class="m-0 home-title">Fashion And Desing</h5>
+                  <a href="#" class="float-end text-decoration-none fs-6 selfcolor"> All Product <i
+                        class="bi bi-caret-right-fill"></i>
+                  </a>
+               </div>
+
+               <div class="osahan-recommend">
+                  <div class="home-product-slider pb-0 mb-0">
+                     <div class="products-home-sintr">
+                        <div class="row product-row-scroll">
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- ledis fashion -->
+      <section class="popular-product-area pt-3">
+         <div class="container">
+            <div class="popular-product-inner p-3 bg-white rounded">
+               <div class="title d-flex justify-content-between align-items-center py-3 ">
+                  <h5 class="m-0 home-title">Ledis fashion</h5>
+                  <a href="" class="float-end text-decoration-none fs-6 selfcolor"> All Product <i
+                        class="bi bi-caret-right-fill"></i>
+                  </a>
+               </div>
+
+               <div class="osahan-recommend">
+                  <div class="home-product-slider pb-0 mb-0">
+                     <div class="products-home-sintr">
+                        <div class="row product-row-scroll">
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very
+                                             fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very
+                                             fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very
+                                             fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very
+                                             fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very
+                                             fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very
+                                             fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- popular few more product  -->
+      <section class="popular-product-area pt-3">
+         <div class="container">
+            <div class="popular-product-inner p-3 bg-white rounded">
+               <div class="container p-0">
+                  <h4 class="  selfbgcolor p-2 mb-0 rounded-top text-center text-white moreproduct_heading"> Few More
+                     Your Essantial Product</h4>
+               </div>
+               <div class="osahan-recommend">
+                  <div class="home-product-slider pb-0 mb-0">
+                     <div class="products-home-sintr">
+                        <div class="row product-row-scroll">
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very
+                                             fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very
+                                             fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very
+                                             fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very
+                                             fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very
+                                             fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="mobile-grid col-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                              <div class="list-card product-mobile  h-100 overflow-hidden position-relative">
+                                 <div class="product-view ">
+                                    <a href="#" class="d-block m-2 mb-0 ms-0 p-0 shadow-sm border rounded border ">
+                                       <div class="overflow-hidden w-100" style="height: 150px;">
+                                          <img src="img/clock.jpg" alt="product" class="d-block w-100">
+                                       </div>
+                                       <div class="p-2">
+                                          <p class="m-0 onlinetext fw-bold selfcolor">Watch here you can read and use a
+                                             very
+                                             fine work
+                                             sapce</p>
+                                          <h6 class="fw-bold mb-0">$ 620</h6>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- footer section  -->
+      <footer class="section-footer pt-3 ">
+         <section class="footer-main">
+            <div class="container ">
+               <div class="popular-product-inner p-3 rounded">
+                  <div class="row">
+                     <aside class="col-lg footer-section-aside ">
+                        <h6 class="title">Contract Us </h6>
+                        <div class="contract-address">
+                           <p class="contact-des">
+                              <span class="text">Support: </span>
+                              <a href="">Support@gmail.com</a>
+                           </p>
+                        </div>
+                        <div class="contract-address">
+                           <p class="contact-des">
+                              <span class="text">information: </span>
+                              <a href="">info@gmail.com</a>
+                           </p>
+                        </div>
+                        <div class="contract-address">
+                           <p class="contact-des">
+                              <span class="text">Admin: </span>
+                              <a href="">admin@gmail.com</a>
+                           </p>
+                        </div>
+                        <div class="contract-address">
+                           <p class="contact-des">
+                              House 3, road 9/b, Muktar para <br> Sirajgonj, Bangladesh
+                           </p>
+                        </div>
+                     </aside>
+
+                     <aside class="col-lg footer-section-aside">
+                        <h6 class="title">Menu </h6>
+                        <div class="contract-address">
+                           <p class="contact-des">
+                              <a href="">About Us</a>
+                           </p>
+                        </div>
+                        <div class="contract-address">
+                           <p class="contact-des">
+                              <a href="">Our Management</a>
+                           </p>
+                        </div>
+                        <div class="contract-address">
+                           <p class="contact-des">
+                              <a href="">Contract Us</a>
+                           </p>
+                        </div>
+                        <div class="contract-address">
+                           <p class="contact-des">
+                              <a href="">privacy policy</a>
+                           </p>
+                        </div>
+                     </aside>
+
+                     <aside class="col-lg footer-section-aside ">
+                        <h6 class="title">LICENSE INFO </h6>
+                        <div class="contract-address">
+                           <p class="contact-des">
+                              <span class="text">Trade License Number :
+                              </span>
+                              64641
+                           </p>
+                        </div>
+                        <div class="contract-address">
+                           <p class="contact-des">
+                              <span class="text">TIN Certificate :
+                              </span>
+                              295866854660
+                           </p>
+                        </div>
+                     </aside>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="social-newsletter-area">
+            <div class="container">
+               <div class="social-newsletter-inner">
+                  <ul class="social-icons">
+                     <li class="social-icon"><a href=""><i class="bi bi-facebook"></i></a></li>
+                     <li class="social-icon"><a href=""><i class="bi bi-messenger"></i></a></li>
+                     <li class="social-icon"><a href="" class="youtube"><i class="bi bi-youtube"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section class="footer-bottom pt-1 pb-6 pb-lg-2">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="text-center">
+                        <span class="copyright-text">
+                           Copyright <i class="bi bi-c-circle"></i> 2018 - 2022 | All Rights Reserved by
+                           self-shopping.com
+                        </span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </footer>
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+   <script>
+      const openSidebar = document.getElementById('openSidebar');
+      const sidebar = new bootstrap.Offcanvas(document.getElementById('sidebar'));
+
+      openSidebar.addEventListener('click', function () {
+         sidebar.show();
+      });
+
+      const openSidebare = document.getElementById('openSidebare');
+      const sidebare = new bootstrap.Offcanvas(document.getElementById('sidebare'));
+
+      openSidebare.addEventListener('click', function () {
+         sidebare.show();
+      });
+
+
+
+      function myFunction() {
+         document.getElementById("myDIV").classList.toggle("myStyle");
+      }
+
+
+
+      function toggleCheckout() {
+         const checkoutCard = document.getElementById('checkoutCard');
+         const currentRight = checkoutCard.style.right;
+
+         if (currentRight === '20px') {
+            checkoutCard.style.right = '-320px'; // Hide the card
+         } else {
+            checkoutCard.style.right = '20px'; // Show the card
+         }
+      }
+
+   </script>
+</body>
+
+</html>
